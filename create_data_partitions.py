@@ -6,7 +6,7 @@ from math import floor
 
 def import_data(test_ratio):
     """ Download data. """
-    data = pd.read_csv('https://archive.org/download/train_202109/train.csv')
+    data = pd.read_csv('http://archive.org/download/train_202109/train.csv')
     data = data.sample(frac=1).reset_index(drop=True)
     data.to_csv("data.csv", index=False)
     num_test = int(test_ratio*data.shape[0])

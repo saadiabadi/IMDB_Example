@@ -2,6 +2,7 @@ from tensorflow.keras import Sequential
 from tensorflow.keras.layers import Dense, Dropout, Activation
 from tensorflow.keras.layers import Embedding, LSTM
 from tensorflow.keras.layers import Conv1D, MaxPooling1D
+import random
 
 # Embedding
 max_features = 20000
