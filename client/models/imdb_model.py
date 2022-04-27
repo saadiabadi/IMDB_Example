@@ -78,7 +78,7 @@ def create_seed_model(trainedLayers=0):
             lay_count += 1
 
         print(" --------------------------------------- ", flush=True)
-        print(" ------------------MODEL CREATED------------------ ", flush=True)
+        print(" ------------------Partial MODEL CREATED------------------ ", flush=True)
         print(" --------------------------------------- ", flush=True)
     else:
 
@@ -94,7 +94,7 @@ def create_seed_model(trainedLayers=0):
         model.add(Dense(1, activation='sigmoid'))
 
         print(" --------------------------------------- ", flush=True)
-        print(" ------------------MODEL CREATED------------------ ", flush=True)
+        print(" ------------------Full MODEL CREATED------------------ ", flush=True)
         print(" --------------------------------------- ", flush=True)
 
     model.compile(loss='binary_crossentropy',optimizer='adam',metrics=['accuracy'])
